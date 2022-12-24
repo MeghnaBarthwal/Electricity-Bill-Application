@@ -8,6 +8,9 @@ import { LoginComponent } from './login/login.component';
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { DashboardConsumerComponent } from './dashboard-consumer/dashboard-consumer.component';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
+import { AdminComponent } from './admin/admin.component';
+import { ConsumerComponent } from './consumer/consumer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     DashboardAdminComponent,
     DashboardConsumerComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    AdminComponent,
+    ConsumerComponent
   ],
   imports: [
     BrowserModule,

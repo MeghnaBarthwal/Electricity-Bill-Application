@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-header',
@@ -7,4 +9,18 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  constructor(private auth:AuthService ,private router: Router){
+
+  }
+
+  goToHome(){
+    this.router.navigate(['home']);
+  }
+
+  admin(){
+    this.router.navigate(['admin']);
+  }
+  consumer(){
+    this.router.navigate(['consumer'])
+  }
 }
