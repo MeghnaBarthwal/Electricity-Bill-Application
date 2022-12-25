@@ -30,7 +30,7 @@ export class AdminLoginComponent {
       this.errorMsg="";
       let res = this.auth.login(this.username,this.password);
       if(res === 200){
-        this.router.navigateByUrl('admin')
+        this.router.navigateByUrl('dashboard-admin')
       }
       if(res === 403){
         this.errorMsg="Invalid credentials";

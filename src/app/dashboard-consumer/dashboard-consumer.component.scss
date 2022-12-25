@@ -1,0 +1,61 @@
+.consumer-dash {
+    padding: 10px 40px;
+    width: 60%;
+    margin: 0 auto;
+    //background-color: #8cd6ff;
+    border-radius: 20px;
+  }
+  .consumer-dash h1 {
+    text-align: center;
+    color: #13054d;
+  }
+  ol {
+    counter-reset: li;
+    list-style: none;
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .consumer-heading {
+    margin-top: 50px;
+    color: #0d0d0d;
+  }
+  ol a {
+    //position: relative;
+    text-align: center;
+    display: block;
+    padding: 0.4em 0.4em 0.4em 2em;
+    margin: 0.5em 0;
+    background: #d4e1ff;
+    color: #11345e;
+    text-decoration: none;
+    border-radius: 0.3em;
+    transition: 0.3s ease-out;
+  }
+  
+  ol a:hover {
+    background: #b7cbfb;
+  }
+  ol a:hover:before {
+    transform: rotate(360deg);
+  }
+  ol a:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #b4e0ff;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: 0.3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all 0.3s ease-out;
+  }
+  
