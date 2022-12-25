@@ -6,7 +6,18 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-  constructor() { }
+  constructor( private router: Router) { }
 
 
+  login(uname: string,pword:string){
+    if(uname === "meghna" && pword === '12345'){
+      return 200;
+    }else{
+      return 403;
+    }
+  }
+
+  logout(){
+    this.router.navigate(['login']);
+  }
 }
