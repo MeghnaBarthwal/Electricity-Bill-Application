@@ -17,10 +17,7 @@ export class HeaderComponent {
     this.router.navigate(['home']);
   }
 
-  admin(){
-    this.router.navigate(['admin']);
-  }
   consumer(){
-    this.router.navigate(['consumer'])
+    this.router.navigateByUrl('consumer');
   }
 }
