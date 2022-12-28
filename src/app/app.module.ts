@@ -12,6 +12,7 @@ import { AdminComponent } from './admin/admin.component';
 import { ConsumerComponent } from './consumer/consumer.component';
 import { FormsModule } from '@angular/forms';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -28,9 +29,12 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+ }
